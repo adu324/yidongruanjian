@@ -1,0 +1,15 @@
+.container{
+  height: 100vh;
+  display: flex;
+  flex-direction:  column;
+  align-items:  center;
+  justify-content:  space-around;
+}
+
+image{
+  width: 500rpx;/*图片宽度*/
+  border-radius: 50%;/*4个角变为圆角形状*/
+}
+text{
+  font-size: 50rpx;/*字体大小*/
+}
