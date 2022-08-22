@@ -2,17 +2,27 @@
 var common = require('../../utils/common.js') //引用公共JS文件
 
 Page({
-  getMyInfo:function(e){
-    //console.log(e.detail.userInfo)
-    let info = e.detail.userInfo
-    this.setData({
-      src:info.avatarUrl,
-      nickName:info.nickName,
-      isLogin:true
-    })
-   //获取新闻列表
-   this.getMyFavorites()
-  },
+  
+  getMyInfo: function()
+    {
+        var that = this;
+        wx.getUserProfile({
+          desc: '用于完善会员资料', // 声明获取用户个人信息后的用途，后续会展示在弹窗中，请谨慎填写
+           success: (res) => {
+          console.log("获取用户信息成功", res);
+          that.setData({
+            isLogin:true,
+            src: res.userInfo.avatarUrl,
+            nickName: res.userInfo.nickName
+          }) 
+          //获取新闻列表
+          this.getMyFavorites()
+        },
+          fail: res => {
+           console.log("获取用户信息失败", res)
+          }
+       })
+    },
   /**
    * 页面的初始数据
    */
