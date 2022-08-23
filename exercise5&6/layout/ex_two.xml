@@ -379,7 +379,7 @@
                 android:gravity="center"
                 android:layout_below="@id/yan"
                 android:layout_centerHorizontal="true"
-                android:text="首页"
+                android:text="验房"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
         </RelativeLayout>
@@ -401,7 +401,7 @@
                 android:gravity="center"
                 android:layout_below="@id/tong"
                 android:layout_centerHorizontal="true"
-                android:text="首页"
+                android:text="统计"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
         </RelativeLayout>
@@ -423,7 +423,7 @@
                 android:gravity="center"
                 android:layout_below="@id/she"
                 android:layout_centerHorizontal="true"
-                android:text="首页"
+                android:text="设置"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
         </RelativeLayout>
