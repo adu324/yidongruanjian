@@ -1,0 +1,19 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/result/result"
+  ],
+
+  "window": {
+    "backgroundColor": "#f1b64e",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f1b64e",
+    "navigationBarTitleText": "告白小人",
+    "navigationBarTextStyle": "white"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "sitemapLocation": "sitemap.json"
+}
